@@ -1,0 +1,44 @@
+.body {
+	background-image: url(g.jpg) ;
+	background-size: 100%;
+	overflow-x: hidden; 
+}
+.img {
+	position: absolute;
+	top: 400px;
+	animation-name: superman;
+	animation-duration: 3s;
+	width: 200px;
+	animation-iteration-count: infinite;
+}
+@keyframes superman {
+	0%{left: 0px;}
+	25%{left: 1500px;}
+	50%{left: 1500px;}
+	75%{transform: scale(-1,1);}
+	100%{right: 500px; left: 0px}
+}
+.cloud-1 {
+	position: absolute; /*не зависеть ни откого*/
+	left: -800px;
+	animation-name: cloud_anim1;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+.cloud-2 {
+	position: absolute;
+	animation-name: cloud_anim2;
+	animation-duration: 40s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes cloud_anim1 {
+	from{left: -800px;}
+	to{left: 1900px;}
+}
+
+@keyframes cloud_anim2 {
+	from{left: -800px;}
+	to{left: 1900px;}
+}
+
